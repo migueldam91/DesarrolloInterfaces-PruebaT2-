@@ -1,6 +1,7 @@
 package miguel.pruebat2_miguelhalys;
 
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -17,7 +18,8 @@ public class SplashActivity extends AppCompatActivity {
         Animation shake = AnimationUtils.loadAnimation(this, R.anim.pulse_animation);
         titleField= (TextView) findViewById(R.id.splashTitle);
         subtitleField= (TextView) findViewById(R.id.splashSubtitle);
-        subtitleField.startAnimation(shake);
+        titleField.startAnimation(shake);
+        setFuente();
         openApp(true);
     }
     private void openApp(boolean locationPermission) {
@@ -31,5 +33,12 @@ public class SplashActivity extends AppCompatActivity {
                 finish();
             }
         }, 3000);
+    }
+    private void setFuente() {
+        Typeface font = Typeface.createFromAsset(getApplicationContext().getAssets(), "AmaticSC-Regular.ttf");
+        titleField.setTypeface(font);
+        subtitleField.setTypeface(font);
+        titleField.setTypeface(font);
+        subtitleField.setTypeface(font);
     }
 }

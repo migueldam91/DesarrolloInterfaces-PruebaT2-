@@ -4,10 +4,15 @@
     <string name="action_b">B</string>
     <string name="title_activity_main">MainActivity</string>
 
+    <!-- Edittexts -->
     <string name="username_hint">Nombre de usuario</string>
     <string name="password_hint">Contraseña</string>
+
+    <!-- Buttons-->
     <string name="Login_button">Login</string>
     <string name="SignUp_label">hava an account? SIGN UP here!</string>
+
+    <!-- Banner-->
     <string name="app_title">Yep!</string>
     <string name="app_subtitle">Do I Know You?</string>
 

@@ -6,27 +6,15 @@
     tools:context="miguel.pruebat2_miguelhalys.SplashActivity"
     android:background="@color/colorPrimary">
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="150dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:gravity="center_horizontal"
-        >
+    <RelativeLayout style="@style/contenedorSplash">
 
         <TextView
             android:id="@+id/splashTitle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:text="@string/app_title"
-            style="@style/titles"
-             />
+            style="@style/titles" />
 
         <TextView
             android:id="@+id/splashSubtitle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:text="@string/app_subtitle"
             android:layout_below="@id/splashTitle"
             style="@style/Subtitle"/>

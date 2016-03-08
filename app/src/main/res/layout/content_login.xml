@@ -74,9 +74,5 @@
     <TextView
         android:text="@string/SignUp_label"
         android:id="@+id/signup"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/authLayoutContainer"
-        android:gravity="center"
-        android:textColor="@android:color/white"/>
+        style="@style/registerLabel" />
 </RelativeLayout>
